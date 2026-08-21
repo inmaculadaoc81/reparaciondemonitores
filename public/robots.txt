@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.reparaciondemonitores.com.es/sitemap.xml
