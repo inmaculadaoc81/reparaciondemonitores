@@ -58,7 +58,7 @@ export default function Home() {
               <div className="hero-main">
                 <span className="kicker hero-kicker">Servicio técnico de monitores y televisores en Madrid</span>
                 <h1>
-                  Tu pantalla se ha quedado en negro. <em>¿Merece la pena arreglarla?</em>
+                  Tu pantalla no enciende. <em>Aquí la diagnosticamos y la reparamos.</em>
                 </h1>
                 <p className="hero-sub">
                   Antes de gastar un euro te decimos qué le pasa exactamente. Por 20€ hacemos el diagnóstico y te
@@ -488,6 +488,38 @@ export default function Home() {
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"
               />
+            </div>
+          </div>
+        </section>
+
+        {/* ===================== GUÍA ===================== */}
+        <section className="guia" id="guia">
+          <div className="container">
+            <div className="sec-head">
+              <span className="kicker">Guía</span>
+              <h2>Por qué falla un monitor o un televisor, y cuándo merece la pena repararlo</h2>
+            </div>
+            <div className="guia-text">
+              <p>
+                La mayoría de averías de monitores y televisores tienen un número reducido de
+                causas: fuente de alimentación, placa base, panel, retroiluminación o cableado
+                interno. Muchas veces el síntoma visible —pantalla en negro, imagen que parpadea,
+                &quot;sin señal&quot;— no indica directamente qué componente ha fallado, así que no es
+                buena idea dar por hecho la causa antes de abrir el equipo.
+              </p>
+              <p>
+                Por eso separamos el proceso en dos pasos: primero el diagnóstico, con el que
+                identificamos la causa real; después el presupuesto, sin compromiso, para que
+                decidas con la información delante. En equipos antiguos o con averías graves, el
+                presupuesto puede acercarse al precio de un equipo nuevo — en esos casos te lo
+                explicamos con claridad para que la decisión sea tuya, no una sorpresa.
+              </p>
+              <p>
+                Trabajamos con las marcas más habituales en Madrid (Samsung, LG, Dell, HP, Apple,
+                Asus, Acer, Alienware, Lenovo, Philips, BenQ, AOC, ViewSonic y otras) y también con
+                ordenadores y portátiles. Si no sabes si tu caso tiene arreglo, cuéntanos qué le
+                pasa y te orientamos antes de que decidas nada.
+              </p>
             </div>
           </div>
         </section>

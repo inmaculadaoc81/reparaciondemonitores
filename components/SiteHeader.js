@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "#recogida", label: "Recogida" },
   { href: "#confianza", label: "Marcas" },
   { href: "#cita", label: "Cita" },
+  { href: "#guia", label: "Guía" },
   { href: "#faq", label: "FAQ" },
   { href: "#contacto", label: "Contacto" },
 ];

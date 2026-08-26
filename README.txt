@@ -65,12 +65,23 @@ DESPLIEGUE EN VERCEL
 CHAT N8N
 --------
 El widget de chat (@n8n/chat) se carga en components/N8nChat.js.
-Antes de publicar, sustituye la URL de ejemplo por el webhook real de n8n:
 
-  const N8N_WEBHOOK_URL = "https://n8n.kelatos.com/webhook/startmonitor-chat";
-
-Mientras no se configure un webhook real, el widget se muestra pero no
-podrá completar conversaciones.
+CORREGIDO en esta revisión:
+- Webhook: usaba una URL de ejemplo (n8n.kelatos.com/webhook/startmonitor-chat,
+  no resolvía) — sustituida por el webhook real y compartido de toda la
+  familia Kelatos:
+  https://sswebhookss.affirmatechnology.com/webhook/be1293ae-db62-4ab3-8204-d2ae42505d63/chat
+- Idioma: defaultLanguage estaba en "en" con el objeto i18n bajo la clave
+  "en", en un sitio en español — corregido a "es" en ambos sitios.
+- CSS de posicionamiento: la regla original apuntaba al selector
+  .chat-window-wrapper.n8n-chat, que no coincide con las clases reales
+  que genera el widget (confirmado en el resto de la familia: son
+  .chat-window-toggle y .chat-window dentro de #n8n-chat). Sustituida por
+  el patrón #n8n-chat [class*="chat-window-toggle"] / [class*="chat-window"]
+  con !important, añadiendo también el borde blanco estándar del botón.
+  Antes de este cambio el widget probablemente se mostraba en su posición
+  por defecto del CDN, solapado con los botones flotantes de teléfono y
+  WhatsApp.
 
 
 GOOGLE ANALYTICS
@@ -93,3 +104,32 @@ CAL.COM
 --------
 Calendario embebido directamente en la página (sección "Reserva una cita"),
 usando: https://cal.com/kelatos/30min?embed=true&theme=light
+
+
+REVISIÓN — CHECKLIST FAMILIA KELATOS (esta pasada)
+-----------------------------------------------------
+Ya estaba bien (sin tocar):
+- Google Analytics: coincide con el código proporcionado (G-N1NLNW7H98).
+- Schema.org: ya muy completo (ProfessionalService + FAQPage, con
+  areaServed, sameAs, hasOfferCatalog, geo).
+- Teléfono: +34 910 05 36 74, consistente en botones, caja de
+  información y footer, sin discrepancias.
+- Botón de teléfono del header ya mostraba solo el número corto
+  ("Llamar 910 05 36 74"), sin el bug de texto largo.
+
+Añadido:
+- Banner de cookies (components/CookieBanner.js, nuevo): Aceptar /
+  Rechazar / Política de privacidad, localStorage, montado en
+  app/layout.js.
+- Sección "Guía" (id="guia", enlazada en el menú) con contenido propio
+  sobre causas habituales de avería y cuándo compensa reparar.
+- H1 reescrito, corto, directo y totalmente afirmativo (sin
+  interrogación ni condicionales — antes usaba "¿Merece la pena
+  arreglarla?"): "Tu pantalla no enciende. Aquí la diagnosticamos y la
+  reparamos." Tamaño aumentado: clamp(38-62px) -> clamp(46-76px).
+- Chat n8n: webhook real, idioma corregido a español y CSS de
+  posicionamiento reescrito con el selector correcto (ver arriba).
+
+Validado con "npm run build" (Next.js); compila y genera las páginas
+estáticas sin errores. Este proyecto no tiene ESLint configurado
+(sin eslint.config.*), así que no se ha podido ejecutar lint.

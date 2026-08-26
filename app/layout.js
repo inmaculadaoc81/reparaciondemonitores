@@ -1,5 +1,6 @@
 import { Space_Grotesk, Inter } from "next/font/google";
 import Script from "next/script";
+import CookieBanner from "@/components/CookieBanner";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -139,6 +140,7 @@ export default function RootLayout({ children }) {
           Ir al contenido principal
         </a>
         {children}
+        <CookieBanner />
 
         <script
           type="application/ld+json"
