@@ -60,18 +60,6 @@ export default function Home() {
                 <h1>
                   Tu pantalla no enciende. <em>Aquí la diagnosticamos y la reparamos.</em>
                 </h1>
-                <p className="hero-sub">
-                  Antes de gastar un euro te decimos qué le pasa exactamente. Por 20€ hacemos el diagnóstico y te
-                  damos un presupuesto sin compromiso. Decides tú, con la información delante.
-                </p>
-
-                <ul className="concern-chips">
-                  <li>¿Cuánto me va a costar?</li>
-                  <li>¿Merece la pena repararlo?</li>
-                  <li>¿Cuánto tiempo estaré sin él?</li>
-                  <li>¿Es grave o tiene arreglo fácil?</li>
-                </ul>
-
                 <div className="hero-ctas">
                   <a className="btn btn-whatsapp" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     <WhatsAppIcon />
@@ -710,10 +698,7 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Botones flotantes: teléfono + WhatsApp, apilados */}
-      <a className="tel-float" href="tel:+34910053674" aria-label="Llamar al 910 05 36 74">
-        <PhoneIcon size={26} />
-      </a>
+      {/* Botón flotante: WhatsApp */}
       <a className="wa-float" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
         <WhatsAppIcon size={30} />
       </a>

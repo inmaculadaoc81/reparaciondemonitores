@@ -133,3 +133,15 @@ Añadido:
 Validado con "npm run build" (Next.js); compila y genera las páginas
 estáticas sin errores. Este proyecto no tiene ESLint configurado
 (sin eslint.config.*), así que no se ha podido ejecutar lint.
+
+REVISIÓN ADICIONAL (a petición del cliente):
+- Quitado el párrafo bajo el H1 ("Antes de gastar un euro te decimos
+  qué le pasa exactamente...") y las 4 píldoras de preguntas
+  frecuentes ("¿Cuánto me va a costar?", "¿Merece la pena
+  repararlo?", "¿Cuánto tiempo estaré sin él?", "¿Es grave o tiene
+  arreglo fácil?").
+- Eliminado el botón flotante de llamada (.tel-float); solo queda el
+  de WhatsApp, que ya tenía su propia posición fija (bottom:22px) y no
+  dependía del de teléfono. El botón de teléfono del header y de otras
+  secciones de la página no se han tocado, solo el flotante.
+- Validado de nuevo con "npm run build": compila sin errores.
