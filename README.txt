@@ -145,3 +145,15 @@ REVISIÓN ADICIONAL (a petición del cliente):
   dependía del de teléfono. El botón de teléfono del header y de otras
   secciones de la página no se han tocado, solo el flotante.
 - Validado de nuevo con "npm run build": compila sin errores.
+
+REVISIÓN ADICIONAL — BUG REAL (a petición del cliente, "el botón del
+bot se ve muy arriba"):
+- Al quitar el botón flotante de llamada (.tel-float) en la pasada
+  anterior, no se ajustó el bottom del chat n8n: seguía calculado
+  para cuando había DOS botones apilados debajo (WhatsApp + teléfono),
+  dejando un hueco vacío de ~80px entre WhatsApp y el chat, que
+  parecía "flotar" a media página. Recalculado ahora que solo queda
+  WhatsApp: bottom:96px escritorio (antes 162px), 90px móvil (antes
+  144px), justo encima de .wa-float. También eliminadas las reglas
+  CSS muertas de .tel-float que ya no se usaban.
+- Validado de nuevo con "npm run build": compila sin errores.

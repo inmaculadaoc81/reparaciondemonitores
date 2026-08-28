@@ -620,25 +620,22 @@ footer.site-footer{ background: var(--navy); color: rgba(255,255,255,.82); paddi
    verificados en el resto de la familia); se sobreescriben con
    !important para que el botón quede por encima de mis dos botones
    flotantes, con el borde blanco estándar. */
-.wa-float, .tel-float{
+.wa-float{
   position:fixed; right: 22px; z-index: 600;
   width:60px; height:60px; border-radius:50%;
   color:#fff;
   display:flex; align-items:center; justify-content:center;
   box-shadow: 0 8px 24px rgba(0,0,0,.25);
   transition: transform .15s ease;
+  bottom: 22px; background:#25D366;
 }
-.wa-float{ bottom: 22px; background:#25D366; }
 .wa-float:hover{ transform: scale(1.07); background:#188C44; }
-
-.tel-float{ bottom: 92px; background: var(--navy); }
-.tel-float:hover{ transform: scale(1.07); background:#081b30; }
 
 #n8n-chat .chat-window-toggle,
 #n8n-chat [class*="chat-window-toggle"]{
   position: fixed !important;
   right: 22px !important;
-  bottom: 162px !important;
+  bottom: 96px !important;
   z-index: 10060 !important;
   border: 1px solid #fff !important;
 }
@@ -646,9 +643,9 @@ footer.site-footer{ background: var(--navy); color: rgba(255,255,255,.82); paddi
 #n8n-chat [class*="chat-window"]:not([class*="toggle"]){
   position: fixed !important;
   right: 22px !important;
-  bottom: 232px !important;
+  bottom: 166px !important;
   z-index: 10100 !important;
-  max-height: calc(100vh - 260px) !important;
+  max-height: calc(100vh - 190px) !important;
 }
 
 /* ---------- Responsive ---------- */
@@ -689,20 +686,18 @@ footer.site-footer{ background: var(--navy); color: rgba(255,255,255,.82); paddi
   .footer-grid{ grid-template-columns: 1fr 1fr; gap:28px; }
   .antes-wrap{ padding: 26px; }
   .cal-embed{ min-height: 640px; }
-  .wa-float, .tel-float{ width:54px; height:54px; right:16px; }
-  .wa-float{ bottom:16px; }
-  .tel-float{ bottom:80px; }
+  .wa-float{ width:54px; height:54px; right:16px; bottom:16px; }
   #n8n-chat .chat-window-toggle,
   #n8n-chat [class*="chat-window-toggle"]{
     right: 16px !important;
-    bottom: 144px !important;
+    bottom: 90px !important;
   }
   #n8n-chat .chat-window,
   #n8n-chat [class*="chat-window"]:not([class*="toggle"]){
     left: 12px !important;
     right: 12px !important;
     width: auto !important;
-    bottom: 214px !important;
+    bottom: 160px !important;
     max-height: calc(100vh - 240px) !important;
   }
 }
