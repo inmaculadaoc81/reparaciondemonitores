@@ -28,7 +28,7 @@ export default function N8nChat() {
           defaultLanguage: "es",
           initialMessages: [
             "¡Hola! Soy el asistente de StartMonitor.",
-            "Cuéntame qué le pasa a tu monitor o televisor y te oriento.",
+            "Cuéntame qué le pasa a tu monitor y te oriento.",
           ],
           i18n: {
             es: {

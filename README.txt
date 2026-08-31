@@ -183,6 +183,24 @@ REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente)
   Next.js, coincide con la carpeta app/api/contact/).
 - Validado con "npm run build": compila sin errores.
 
+REVISIÓN ADICIONAL — BUG REAL DE CONTENIDO (a petición del cliente,
+"StartMonitor no se reparan televisores, solo monitores"):
+- El sitio mencionaba "televisores"/"TV" en más de una decena de
+  sitios (título, meta description, og/twitter, schema.org —incluida
+  una Offer completa "Reparación de televisores" que se ha eliminado
+  del hasOfferCatalog—, kicker del hero, el H1 recién reescrito en la
+  pasada anterior, la fila "Servicio" de la tarjeta de información,
+  encabezados de sección, el texto de recogida, la sección de marcas,
+  el bloque de YouTube, la sección de guía/SEO, dos preguntas de la
+  FAQ —tanto en el schema FAQPage de layout.js como en el acordeón
+  visual de FaqList.js—, el placeholder del campo "Equipo/producto"
+  del formulario, el mensaje inicial del chat n8n, el texto alt del
+  logo de la cabecera y el pie de página. Todo corregido a mencionar
+  únicamente "monitores" (y, donde ya se indicaba, "ordenadores y
+  portátiles", que sí forma parte del servicio real). H1 actualizado
+  a: "Repara tu monitor con diagnóstico y garantía." (7 palabras).
+- Validado de nuevo con "npm run build": compila sin errores.
+
 REVISIÓN ADICIONAL — BUG REAL (a petición del cliente, "el botón del
 bot se ve muy arriba"):
 - Al quitar el botón flotante de llamada (.tel-float) en la pasada

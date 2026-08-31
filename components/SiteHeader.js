@@ -24,7 +24,7 @@ export default function SiteHeader() {
         <a href="#inicio" className="brand" aria-label="StartMonitor - Inicio">
           <Image
             src="/assets/logo.png"
-            alt="StartMonitor® - Servicio técnico de monitores y televisores en Madrid"
+            alt="StartMonitor® - Servicio técnico de monitores en Madrid"
             width={140}
             height={52}
             priority

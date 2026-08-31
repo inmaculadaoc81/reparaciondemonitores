@@ -91,7 +91,7 @@ export default function ContactForm() {
             name="equipo"
             value={data.equipo}
             onChange={handleChange}
-            placeholder='Ej: monitor Samsung 27", TV LG 43"...'
+            placeholder='Ej: monitor Samsung 27", monitor LG 32"...'
             required
           />
         </div>

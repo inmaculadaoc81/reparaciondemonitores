@@ -56,9 +56,9 @@ export default function Home() {
           <div className="container">
             <div className="hero-grid">
               <div className="hero-main">
-                <span className="kicker hero-kicker">Servicio técnico de monitores y televisores en Madrid</span>
+                <span className="kicker hero-kicker">Servicio técnico de monitores en Madrid</span>
                 <h1>
-                  Repara tu monitor o televisor con diagnóstico y garantía.
+                  Repara tu monitor con diagnóstico y garantía.
                 </h1>
                 <div className="hero-ctas">
                   <a className="btn btn-whatsapp" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -151,7 +151,7 @@ export default function Home() {
                     </span>
                     <div>
                       <strong>Servicio</strong>
-                      <p>Diagnóstico, soporte y reparación de monitores y televisores. También ordenadores y portátiles.</p>
+                      <p>Diagnóstico, soporte y reparación de monitores. También ordenadores y portátiles.</p>
                     </div>
                   </div>
 
@@ -189,7 +189,7 @@ export default function Home() {
           <div className="container">
             <div className="sec-head">
               <span className="kicker">Empecemos por lo que te trae aquí</span>
-              <h2>¿Qué le pasa a tu monitor o tu televisor?</h2>
+              <h2>¿Qué le pasa a tu monitor?</h2>
               <p>No hace falta que sepas el nombre técnico de la avería. Cuéntanos lo que ves, nosotros nos encargamos del resto.</p>
             </div>
 
@@ -335,7 +335,7 @@ export default function Home() {
                   Recogida y entrega
                 </span>
                 <h2>Tu pantalla está rota. No hace falta que tu semana también lo esté.</h2>
-                <p className="lede">Recogemos tu monitor o televisor en toda la Península.</p>
+                <p className="lede">Recogemos tu monitor en toda la Península.</p>
                 <p className="body">
                   No hace falta que cargues con la caja, busques transporte o pidas el día libre para acercarte. Lo
                   recogemos en tu domicilio, lo revisamos, y te lo devolvemos cuando esté listo.
@@ -371,7 +371,7 @@ export default function Home() {
           <div className="container">
             <div className="sec-head">
               <span className="kicker">Marcas con las que trabajamos</span>
-              <h2>Reparamos las marcas de monitores y televisores más usadas en Madrid</h2>
+              <h2>Reparamos las marcas de monitores más usadas en Madrid</h2>
               <p>Da igual la marca que tengas: primero diagnosticamos, después te decimos si tiene arreglo.</p>
             </div>
 
@@ -448,7 +448,7 @@ export default function Home() {
                   Cómo trabajamos
                 </span>
                 <h2>Antes de decirte que sabemos hacerlo, preferimos enseñártelo</h2>
-                <p>En nuestro canal de YouTube puedes ver reparaciones, casos reales y cómo trabajamos con monitores y televisores.</p>
+                <p>En nuestro canal de YouTube puedes ver reparaciones, casos reales y cómo trabajamos con monitores.</p>
               </div>
               <a className="btn btn-outline" href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer">
                 <span className="play-badge">
@@ -487,11 +487,11 @@ export default function Home() {
           <div className="container">
             <div className="sec-head">
               <span className="kicker">Guía</span>
-              <h2>Por qué falla un monitor o un televisor, y cuándo merece la pena repararlo</h2>
+              <h2>Por qué falla un monitor, y cuándo merece la pena repararlo</h2>
             </div>
             <div className="guia-text">
               <p>
-                La mayoría de averías de monitores y televisores tienen un número reducido de
+                La mayoría de averías de monitores tienen un número reducido de
                 causas: fuente de alimentación, placa base, panel, retroiluminación o cableado
                 interno. Muchas veces el síntoma visible —pantalla en negro, imagen que parpadea,
                 &quot;sin señal&quot;— no indica directamente qué componente ha fallado, así que no es
@@ -615,7 +615,7 @@ export default function Home() {
             <div className="footer-brand">
               <Image src="/assets/logo.png" alt="StartMonitor®" width={140} height={52} />
               <p>
-                Servicio técnico especializado en diagnóstico, soporte y reparación de monitores y televisores en
+                Servicio técnico especializado en diagnóstico, soporte y reparación de monitores en
                 Madrid. También ordenadores y portátiles. Recogida y entrega en toda la Península.
               </p>
             </div>

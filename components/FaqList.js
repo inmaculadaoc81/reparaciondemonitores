@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const FAQS = [
   {
-    q: "¿Cuánto tiempo voy a estar sin mi monitor o televisor?",
+    q: "¿Cuánto tiempo voy a estar sin mi monitor?",
     a: "Depende del tipo de avería y de la disponibilidad de piezas. El tiempo anunciado para las reparaciones es de menos de una semana.",
   },
   {
@@ -32,7 +32,7 @@ const FAQS = [
     a: "Sí, ofrecemos 6 meses de garantía en los servicios y productos, y utilizamos piezas o repuestos originales cuando hace falta sustituir algo.",
   },
   {
-    q: "¿Trabajáis con mi marca de monitor o televisor?",
+    q: "¿Trabajáis con mi marca de monitor?",
     a: "Atendemos Acer, Alienware, Apple iMac, Asus, Dell, HP, LG, Samsung, Lenovo, Gigabyte, Philips, Hannspree, Hama, AOC, BenQ, Duronic, Eizo, Iiyama, Kimex, MSI, Nilox, ViewSonic y otras marcas.",
   },
 ];

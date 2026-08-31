@@ -21,14 +21,14 @@ const SITE_URL = "https://www.reparaciondemonitores.com.es";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Reparación de Monitores y Televisores en Madrid | StartMonitor®",
+  title: "Reparación de Monitores en Madrid | StartMonitor®",
   description:
-    "Tu monitor o televisor no funciona y no sabes si merece la pena arreglarlo. Diagnóstico por 20€, presupuesto sin compromiso y garantía de 6 meses. Recogida en toda la Península.",
+    "Tu monitor no funciona y no sabes si merece la pena arreglarlo. Diagnóstico por 20€, presupuesto sin compromiso y garantía de 6 meses. Recogida en toda la Península.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "StartMonitor®",
-    title: "Reparación de Monitores y Televisores en Madrid | StartMonitor®",
+    title: "Reparación de Monitores en Madrid | StartMonitor®",
     description:
       "Diagnóstico por 20€, presupuesto sin compromiso y garantía de 6 meses. Recogida y entrega en toda la Península.",
     url: SITE_URL,
@@ -37,7 +37,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reparación de Monitores y Televisores en Madrid | StartMonitor®",
+    title: "Reparación de Monitores en Madrid | StartMonitor®",
     description: "Diagnóstico por 20€, presupuesto sin compromiso y garantía de 6 meses. Recogida en toda la Península.",
     images: ["/assets/images/hero.jpg"],
   },
@@ -79,7 +79,6 @@ const localBusinessSchema = {
     name: "Servicios de reparación",
     itemListElement: [
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Reparación de monitores" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Reparación de televisores" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Soporte técnico de ordenadores y portátiles" } },
     ],
   },
@@ -91,7 +90,7 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "¿Cuánto tiempo voy a estar sin mi monitor o televisor?",
+      name: "¿Cuánto tiempo voy a estar sin mi monitor?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Depende del tipo de avería y de la disponibilidad de piezas, pero el tiempo anunciado para las reparaciones es de menos de una semana.",
