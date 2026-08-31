@@ -91,8 +91,16 @@ ID configurado: G-N1NLNW7H98 (cargado en app/layout.js mediante next/script).
 
 DATOS DE LA FICHA / MAPA
 --------------------------
-Google Business: https://maps.app.goo.gl/cU8SMAcCuB2fzHSK6
-Mapa embebido:   iframe oficial de Google Maps proporcionado, sin modificar.
+Google Business: https://maps.app.goo.gl/b66ZC5kMjpw8MrKU7
+(CORREGIDO — el enlace anterior, https://maps.app.goo.gl/cU8SMAcCuB2fzHSK6,
+no era el correcto según indicación del cliente. Actualizado en el
+const GBP_URL de app/page.js y en el sameAs del schema.org en
+app/layout.js.)
+Mapa embebido: iframe de Google Maps actualizado al proporcionado por
+el cliente (ficha real "StartMonitor - Reparación de Monitores",
+place_id 0xd422997a7da3a5f:0x89ce532e0cbaca27), sustituyendo al
+anterior que embebía solo la dirección genérica sin el nombre de la
+ficha de negocio. Actualizado en MAPS_EMBED_SRC de app/page.js.
 
 
 CANAL DE YOUTUBE
@@ -145,6 +153,35 @@ REVISIÓN ADICIONAL (a petición del cliente):
   dependía del de teléfono. El botón de teléfono del header y de otras
   secciones de la página no se han tocado, solo el flotante.
 - Validado de nuevo con "npm run build": compila sin errores.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "Tu X no Y. Aquí Z." usada en varios repos
+  ("Tu pantalla no enciende. Aquí la diagnosticamos y la reparamos.").
+  Reescrito en formato imperativo, sin forzar ninguna marca (taller
+  multimarca de monitores/TV): "Repara tu monitor o televisor con
+  diagnóstico y garantía." (9 palabras).
+- BUG REAL — la casilla de política de privacidad existía pero el
+  texto no enlazaba a ningún sitio. Añadido el enlace estándar de la
+  familia a https://kelatos.com/privacy-policy/ dentro del texto
+  existente, resaltado en azul (components/ContactForm.js).
+- Añadida franja de aviso de servicio técnico independiente debajo del
+  menú (no existía). Aplica aquí porque el sitio repara monitores y
+  televisores de múltiples marcas de terceros (Samsung, LG, Dell, HP,
+  Apple, Asus, Acer, Alienware, Lenovo, Philips, BenQ, AOC, ViewSonic,
+  mostradas en la sección "Marcas"), para dejar clara la no afiliación
+  oficial con ninguna de ellas. Verificado antes que .site-header no
+  usa display:flex directamente, solo su .container interno.
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario en la tarjeta de información.
+- Verificado sin bugs: no existe ningún elemento tipo
+  hero-chip/hero-tag (ni ninguna otra forma rotada con
+  border-radius:999px y texto de etiqueta); no hay ningún texto
+  decorativo gigante tipo watermark en este repo; los tres botones CTA
+  del hero (WhatsApp, recogida, teléfono) ya tenían icono; schema.org
+  ya usaba correctamente el teléfono de la caja de información;
+  formulario correctamente conectado a /api/contact (Route Handler de
+  Next.js, coincide con la carpeta app/api/contact/).
+- Validado con "npm run build": compila sin errores.
 
 REVISIÓN ADICIONAL — BUG REAL (a petición del cliente, "el botón del
 bot se ve muy arriba"):

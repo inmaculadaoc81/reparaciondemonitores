@@ -73,7 +73,7 @@ const localBusinessSchema = {
     longitude: -3.715044,
   },
   areaServed: ["Madrid", "Chamberí", "Moncloa", "Salamanca", "Chamartín", "Tetuán", "Chueca", "Argüelles", "España"],
-  sameAs: ["https://maps.app.goo.gl/cU8SMAcCuB2fzHSK6", "https://www.youtube.com/channel/UCaxAqLD9Mk5gvzqoDedlWSA"],
+  sameAs: ["https://maps.app.goo.gl/b66ZC5kMjpw8MrKU7", "https://www.youtube.com/channel/UCaxAqLD9Mk5gvzqoDedlWSA"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Servicios de reparación",

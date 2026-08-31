@@ -8,10 +8,10 @@ import FooterYear from "@/components/FooterYear";
 const WHATSAPP_URL =
   "https://api.whatsapp.com/send?phone=+34649970128&text=%C2%A1Hola+StartMonitor%21+%C2%A1Deseo+un+diagn%C3%B3stico+y+presupuesto%21";
 const REDSYS_URL = "https://sis.redsys.es/tiendaWeb/item/NDk4OzI%3D";
-const GBP_URL = "https://maps.app.goo.gl/cU8SMAcCuB2fzHSK6";
+const GBP_URL = "https://maps.app.goo.gl/b66ZC5kMjpw8MrKU7";
 const YOUTUBE_URL = "https://www.youtube.com/channel/UCaxAqLD9Mk5gvzqoDedlWSA";
 const MAPS_EMBED_SRC =
-  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d759.1101180773566!2d-3.7150440000000002!3d40.443387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42285c9be1c1f5%3A0x5211dab3476b45d0!2zQy4gZGUgSm9hcXXDrW4gTWFyw61hIEzDs3BleiwgMjYsIENoYW1iZXLDrSwgMjgwMTUgTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses!2sus!4v1787329658422!5m2!1ses!2sus";
+  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d184757.08434851366!2d-3.995881!3d40.5206397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997a7da3a5f%3A0x89ce532e0cbaca27!2sStartMonitor%20-%20Reparaci%C3%B3n%20de%20Monitores!5e1!3m2!1ses-419!2ses!4v1788207581971!5m2!1ses-419!2ses";
 
 const BRANDS = [
   { file: "brand-samsung.jpg", w: 221, name: "Samsung" },
@@ -58,7 +58,7 @@ export default function Home() {
               <div className="hero-main">
                 <span className="kicker hero-kicker">Servicio técnico de monitores y televisores en Madrid</span>
                 <h1>
-                  Tu pantalla no enciende. <em>Aquí la diagnosticamos y la reparamos.</em>
+                  Repara tu monitor o televisor con diagnóstico y garantía.
                 </h1>
                 <div className="hero-ctas">
                   <a className="btn btn-whatsapp" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -124,6 +124,8 @@ export default function Home() {
                         Lunes a viernes
                         <br />
                         09:30–18:00
+                        <br />
+                        Sábados, domingos y días festivos estamos cerrados
                       </p>
                     </div>
                   </div>

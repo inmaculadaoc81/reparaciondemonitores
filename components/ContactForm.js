@@ -121,7 +121,11 @@ export default function ContactForm() {
       <div className="field-check">
         <input type="checkbox" id="privacidad" name="privacidad" checked={data.privacidad} onChange={handleChange} required />
         <label htmlFor="privacidad">
-          He leído y acepto la política de privacidad. Mis datos se usarán únicamente para responder a esta consulta. *
+          He leído y acepto la{" "}
+          <a className="privacy-link" href="https://kelatos.com/privacy-policy/" target="_blank" rel="noopener noreferrer">
+            política de privacidad
+          </a>
+          . Mis datos se usarán únicamente para responder a esta consulta. *
         </label>
       </div>
 
