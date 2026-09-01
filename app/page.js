@@ -473,7 +473,7 @@ export default function Home() {
             <div className="cal-wrap">
               <iframe
                 className="cal-embed"
-                src="https://cal.com/kelatos/30min?embed=true&theme=light"
+                src="https://cal.com/kelatos/30min?embed=true&theme=light&attendeePhoneNumber=%2B34&overlayCalendar=true"
                 title="Reservar cita con StartMonitor"
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"

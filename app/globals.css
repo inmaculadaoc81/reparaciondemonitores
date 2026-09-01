@@ -680,6 +680,7 @@ footer.site-footer{ background: var(--navy); color: rgba(255,255,255,.82); paddi
   .nav-toggle{ display:flex; }
   .container{ padding: 0 18px; }
   .hero{ padding: 40px 0 56px; }
+  .hero h1{ font-size: 48px; }
   .hero-sub{ font-size:16px; }
   .info-card{ padding: 24px 20px; }
   .problemas, .preocupacion, .antes, .como, .recogida, .confianza, .resenas, .youtube, .cita, .faq, .contacto, .mapa, .cta-final{
