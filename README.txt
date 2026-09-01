@@ -212,3 +212,23 @@ bot se ve muy arriba"):
   144px), justo encima de .wa-float. También eliminadas las reglas
   CSS muertas de .tel-float que ya no se usaban.
 - Validado de nuevo con "npm run build": compila sin errores.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente — repo 44/48):
+- Verificado: el iframe de Cal.com ya incluye attendeePhoneNumber y
+  overlayCalendar.
+- Verificado: el correo soporte@kelatos.com no aparece visible.
+- Verificado: el mensaje prellenado de WhatsApp ya usa "¡Hola
+  StartMonitor!".
+- Verificado: SiteHeader.js ya cierra el menú móvil al pulsar
+  cualquier enlace (onClick={() => setOpen(false)} en cada <a>).
+- Verificado: sin iconos ni imágenes con proporciones fijas
+  incorrectas.
+- Verificado: el H1 en móvil ya está en 48px (@media, .hero h1).
+- Verificado: los botones (.btn) ya tenían border-radius:999px y
+  estados hover propios en las cuatro variantes (whatsapp/orange/
+  outline/navy). No requerían cambios.
+- Verificado: ".confianza-badges" es una franja de confianza dentro
+  de la sección de marcas (no bajo el H1, no el patrón de la familia
+  Dyson); no aplica la reubicación.
+- Sin cambios de código en este repo: todos los puntos del checklist
+  ya estaban aplicados.
