@@ -232,3 +232,16 @@ REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente 
   Dyson); no aplica la reubicación.
 - Sin cambios de código en este repo: todos los puntos del checklist
   ya estaban aplicados.
+
+REVISIÓN ADICIONAL (nueva regla de menú móvil, a petición del cliente):
+- BUG REAL — la franja de aviso de independencia estaba dentro de
+  <header> (SiteHeader.js), y el menú móvil desplegable
+  (.main-nav.nav-open) se posiciona en absoluto a top:76px dentro de
+  ese mismo header sticky, solapándose con la franja al abrir el
+  menú (mismo bug de diseño que en AcerTech y el resto de la
+  familia). Movida fuera de <header>: ahora vive como hermana de
+  <SiteHeader/> en app/page.js, justo antes de <main>, en vez de
+  dentro del propio componente de cabecera.
+- Verificado: el header (.site-header{position:sticky;top:0}) ya se
+  mantenía fijo/pegado arriba al hacer scroll; no requería cambios.
+- Validado de nuevo con "npm run build": compila sin errores.

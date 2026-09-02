@@ -53,7 +53,6 @@ export default function SiteHeader() {
           </button>
         </div>
       </div>
-      <div className="disclaimer-bar">Somos un servicio técnico independiente. No vemos equipos en garantía.</div>
     </header>
   );
 }

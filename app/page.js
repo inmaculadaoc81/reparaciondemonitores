@@ -49,6 +49,7 @@ export default function Home() {
   return (
     <>
       <SiteHeader />
+      <div className="disclaimer-bar">Somos un servicio técnico independiente. No vemos equipos en garantía.</div>
 
       <main id="main">
         {/* ===================== HERO ===================== */}
