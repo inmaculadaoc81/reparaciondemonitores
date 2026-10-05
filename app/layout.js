@@ -17,7 +17,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://www.reparaciondemonitores.com.es";
+const SITE_URL = "https://reparaciondemonitores.com.es";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

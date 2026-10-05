@@ -59,7 +59,7 @@ DESPLIEGUE EN VERCEL
    proyecto Next.js, no hace falta configuración adicional.
 3. Añade las variables de entorno indicadas arriba.
 4. Despliega. El dominio de producción debe apuntar a
-   https://www.reparaciondemonitores.com.es/
+   https://reparaciondemonitores.com.es/
 
 
 CHAT N8N
