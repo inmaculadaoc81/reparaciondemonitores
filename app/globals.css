@@ -107,6 +107,7 @@ section{ position:relative; }
 .btn-whatsapp:hover{ box-shadow: var(--shadow-m); background:#188C44; }
 
 .btn-orange{ background: var(--orange); color:#1a1103; box-shadow: var(--shadow-s); }
+.btn-quote{ background:#17a398; color:#fff; box-shadow: var(--shadow-s); }
 .btn-orange:hover{ background: var(--orange-dark); box-shadow: var(--shadow-m); }
 
 .btn-outline{ background: transparent; border-color: rgba(255,255,255,.55); color:#fff; }

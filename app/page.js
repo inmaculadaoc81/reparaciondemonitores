@@ -45,6 +45,15 @@ function PhoneIcon({ size = 20 }) {
   );
 }
 
+function ClockIcon({ size = 20 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3.5 2" />
+    </svg>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -85,6 +94,12 @@ export default function Home() {
                     <span>
                       Atención Telefónica 24 horas 365 días
                       <small>+34 910 05 36 74</small>
+                    </span>
+                  </a>
+                  <a className="btn btn-quote" href="https://api.whatsapp.com/send?phone=34649970128&text=%C2%A1Hola!%20Quiero%20un%20presupuesto" target="_blank" rel="noopener noreferrer">
+                    <ClockIcon />
+                    <span>
+                      Presupuesto en menos de 24 horas
                     </span>
                   </a>
                 </div>
