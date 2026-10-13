@@ -749,3 +749,4 @@ footer.site-footer{ background: var(--navy); color: rgba(255,255,255,.82); paddi
 .guia{ background: var(--paper-soft); }
 .guia-text{ max-width: 820px; margin-top: 8px; }
 .guia-text p{ color: var(--ink-soft); font-size:16px; line-height:1.7; margin:0 0 18px; }
+.btn-quote:hover{filter:brightness(.88)}
