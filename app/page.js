@@ -3,13 +3,10 @@ import SiteHeader from "@/components/SiteHeader";
 import FaqList from "@/components/FaqList";
 import ContactForm from "@/components/ContactForm";
 import N8nChat from "@/components/N8nChat";
-import FooterYear from "@/components/FooterYear";
+import SiteFooter from "@/components/SiteFooter";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { WHATSAPP_URL, REDSYS_URL, GBP_URL, YOUTUBE_URL } from "@/lib/site";
 
-const WHATSAPP_URL =
-  "https://api.whatsapp.com/send?phone=+34649970128&text=%C2%A1Hola+StartMonitor%21+%C2%A1Deseo+un+diagn%C3%B3stico+y+presupuesto%21";
-const REDSYS_URL = "https://sis.redsys.es/tiendaWeb/item/NDk4OzI%3D";
-const GBP_URL = "https://maps.app.goo.gl/b66ZC5kMjpw8MrKU7";
-const YOUTUBE_URL = "https://www.youtube.com/channel/UCaxAqLD9Mk5gvzqoDedlWSA";
 const MAPS_EMBED_SRC =
   "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d184757.08434851366!2d-3.995881!3d40.5206397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997a7da3a5f%3A0x89ce532e0cbaca27!2sStartMonitor%20-%20Reparaci%C3%B3n%20de%20Monitores!5e1!3m2!1ses-419!2ses!4v1788207581971!5m2!1ses-419!2ses";
 
@@ -28,14 +25,6 @@ const BRANDS = [
   { file: "brand-aoc.jpg", w: 146, name: "AOC" },
   { file: "brand-viewsonic.jpg", w: 242, name: "ViewSonic" },
 ];
-
-function WhatsAppIcon({ size = 22 }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.4-1.42a9.87 9.87 0 0 0 4.64 1.18h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.4 1.31-1.93 1.35-.5.05-1.03.24-3.46-.72-2.93-1.16-4.78-4.16-4.93-4.35-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2 .9 2.14.07.15.12.32.02.51-.1.19-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.31.31-.13.61.18.3.8 1.31 1.71 2.12 1.18 1.05 2.17 1.38 2.47 1.53.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.66-.15.27.1 1.7.8 2 .95.29.15.48.22.55.34.07.13.07.73-.16 1.42Z" />
-    </svg>
-  );
-}
 
 function PhoneIcon({ size = 20 }) {
   return (
@@ -624,97 +613,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* ===================== FOOTER ===================== */}
-      <footer className="site-footer">
-        <div className="container">
-          <div className="footer-grid">
-            <div className="footer-brand">
-              <Image src="/assets/logo.png" alt="StartMonitor®" width={140} height={52} />
-              <p>
-                Servicio técnico especializado en diagnóstico, soporte y reparación de monitores en
-                Madrid. También ordenadores y portátiles. Recogida y entrega en toda la Península.
-              </p>
-            </div>
-            <div className="footer-col">
-              <h4>Navegación</h4>
-              <ul>
-                <li>
-                  <a href="#problemas">Problemas frecuentes</a>
-                </li>
-                <li>
-                  <a href="#como-funciona">Cómo funciona</a>
-                </li>
-                <li>
-                  <a href="#recogida">Recogida a domicilio</a>
-                </li>
-                <li>
-                  <a href="#confianza">Marcas</a>
-                </li>
-                <li>
-                  <a href="#faq">Preguntas frecuentes</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-col">
-              <h4>Contacto</h4>
-              <ul>
-                <li>
-                  <a href="tel:+34910053674">910 05 36 74</a>
-                </li>
-                <li>
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                    WhatsApp
-                  </a>
-                </li>
-                <li>
-                  <a href="#contacto">Formulario de contacto</a>
-                </li>
-                <li>
-                  <a href="#cita">Reservar cita</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-col">
-              <h4>Encuéntranos</h4>
-              <ul>
-                <li>
-                  <a href={GBP_URL} target="_blank" rel="noopener noreferrer">
-                    Google Business
-                  </a>
-                </li>
-                <li>
-                  <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer">
-                    Canal de YouTube
-                  </a>
-                </li>
-                <li>
-                  <a href="#mapa">C. Joaquín María López, 26, Madrid</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <span>
-              © <FooterYear /> StartMonitor®. Todos los derechos reservados.
-            </span>
-            <div className="footer-social">
-              <a href={GBP_URL} target="_blank" rel="noopener noreferrer" aria-label="Google Business">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="m12 2 2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 16.9 5.8 20.3l1.6-6.8-5.2-4.6 6.9-.6L12 2Z" />
-                </svg>
-              </a>
-              <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </a>
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                <WhatsAppIcon size={16} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
 
       {/* Botón flotante: WhatsApp */}
       <a className="wa-float" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">

@@ -4,15 +4,16 @@ import { useState } from "react";
 import Image from "next/image";
 
 const NAV_LINKS = [
-  { href: "#problemas", label: "Problemas" },
-  { href: "#preocupacion", label: "Diagnóstico" },
-  { href: "#como-funciona", label: "Cómo funciona" },
-  { href: "#recogida", label: "Recogida" },
-  { href: "#confianza", label: "Marcas" },
-  { href: "#cita", label: "Cita" },
-  { href: "#guia", label: "Guía" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#problemas", label: "Problemas" },
+  { href: "/#preocupacion", label: "Diagnóstico" },
+  { href: "/#como-funciona", label: "Cómo funciona" },
+  { href: "/#recogida", label: "Recogida" },
+  { href: "/#confianza", label: "Marcas" },
+  { href: "/#cita", label: "Agendar cita" },
+  { href: "/#guia", label: "Guía" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#contacto", label: "Contacto" },
 ];
 
 export default function SiteHeader() {
@@ -21,7 +22,7 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="container">
-        <a href="#inicio" className="brand" aria-label="StartMonitor - Inicio">
+        <a href="/#inicio" className="brand" aria-label="StartMonitor - Inicio">
           <Image
             src="/assets/logo.png"
             alt="StartMonitor® - Servicio técnico de monitores en Madrid"

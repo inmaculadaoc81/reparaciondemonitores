@@ -20,7 +20,11 @@ public/assets/logo.png      Logotipo original de StartMonitor®
 public/assets/favicon.png   Favicon (isotipo de la marca)
 public/assets/images/       Imágenes originales del sitio (hero y logos de marcas)
 public/robots.txt           Reglas de rastreo
-public/sitemap.xml          Sitemap de una única URL (web One Page)
+app/sitemap.js              Sitemap: home, /blog y cada artículo publicado
+app/blog/                   Blog: portada y artículos (API pública de Kelatos, ISR 5 min)
+components/SiteFooter.js    Pie compartido entre la home y el blog
+lib/site.js                 Enlaces compartidos (WhatsApp, recogida, Google, YouTube)
+lib/blog.js                 Lectura de la API del blog y Markdown a HTML
 next.config.mjs             Config de Next.js (cache headers de /assets)
 jsconfig.json                Alias de importación "@/..."
 package.json                Dependencias: next, react, react-dom, nodemailer
@@ -245,3 +249,10 @@ REVISIÓN ADICIONAL (nueva regla de menú móvil, a petición del cliente):
 - Verificado: el header (.site-header{position:sticky;top:0}) ya se
   mantenía fijo/pegado arriba al hacer scroll; no requería cambios.
 - Validado de nuevo con "npm run build": compila sin errores.
+
+BLOG (/blog)
+------------
+Los artículos NO viven en este repositorio: los genera y aprueba el agente SEO de
+Kelatos (Agentes V2, organización «StartMonitor», clave startmonitor) y se leen de
+https://db.affirmatechnology.com/kelatos-api/publico/blog?org=startmonitor sin token.
+El diagnóstico cuesta 20 €: ni la estrategia ni el blog deben decir que es gratuito.
