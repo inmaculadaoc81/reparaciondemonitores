@@ -19,6 +19,13 @@ export async function POST(request) {
   }
   body = body || {};
 
+  if ((body.website || "").toString().trim()) {
+    return NextResponse.json({ ok: true });
+  }
+  if (!body.ts || Date.now() - Number(body.ts) < 2000) {
+    return NextResponse.json({ ok: true });
+  }
+
   const nombre = (body.nombre || "").toString().trim();
   const telefono = (body.telefono || "").toString().trim();
   const email = (body.email || "").toString().trim();
